@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Pushster&family=Roboto+Condensed:wght@400;700&family=Waterfall&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    padding: 1% 5%;
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f26524;
+    .left{
+         font-size: 3vw;
+         text-shadow: 2px 2px 4px #f26524;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+}
+main{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    // background-color: aqua;
+    header{
+        text-align: center;
+        font-size: 2vw;
+        color: #f26524;
+        padding: 2%;
+        @media screen and (max-width:480px) {
+            font-size: 1rem;
+        }
+    }
+    section{
+        height: 78vh;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        @media screen and (max-width:480px) {
+            flex-direction: column;
+        }
+        .sectLeft{
+            height: 100vh;
+            flex: 6;
+            @media screen and (max-width:480px) {
+                width: 95%;
+            }
+            form{
+                background-color: #f26524; 
+                box-shadow: 2px 2px 4px #1a1817;
+                width: 80%;
+                margin-top: 10%;
+                margin-left: 10%;
+                padding: 2pc;
+                @media screen and (max-width:480px) {
+                    width: 100%;
+                    margin: auto;
+                    margin-bottom: 8%;
+                }
+
+                input{
+                    width: 79%;
+                    padding: 2%;
+                    margin-bottom: 2%;
+                    border-radius: 5px;
+                    border: none;
+                }
+                input:focus{
+                    outline: 1px solid black;
+                }
+                select{
+                    width: 79%;
+                    padding: 2%;
+                    margin-bottom: 2%;
+                    border-radius: 5px;
+                }
+                button{
+                    display: block;
+                }
+            }
+        }
+        .sectRight{
+            height: 100vh;
+            flex: 6;
+            background-color: #e6e6fa;
+            box-shadow: 2px 2px 4px #1a1817;
+            padding: 6%;
+            overflow: scroll;
+            .infoDiv{
+                border-left: solid 1px #f26524;
+                width: 80%;
+                height: auto;
+                padding: 4%;
+                margin-bottom: 2%;
+                // background-color: rgb(189, 8, 119);
+                border-radius: 5px;
+                span{
+                    color: #f26524;
+                }
+            }
+        }
+    }
+}
+.success{
+    background-color: rgb(137, 199, 137);
+    padding: 3%;
+    text-align: center;
+}
+.danger{
+    background-color: rgb(139, 13, 13);
+    padding: 3%;
+    text-align: center;
+}
+.remove{
+    padding: .5% 2%;
+    background-color: red;
+    box-shadow: 2px 2px 4px #1a1817;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5%;
+}

@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Pushster&family=Roboto+Condensed:wght@400;700&family=Waterfall&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  padding: 1% 5%;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f26524;
+}
+
+nav .left {
+  font-size: 3vw;
+  text-shadow: 2px 2px 4px #f26524;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+main header {
+  text-align: center;
+  font-size: 2vw;
+  color: #f26524;
+  padding: 2%;
+}
+
+@media screen and (max-width: 480px) {
+  main header {
+    font-size: 1rem;
+  }
+}
+
+main section {
+  height: 78vh;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+  main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main section .sectLeft {
+  height: 100vh;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+@media screen and (max-width: 480px) {
+  main section .sectLeft {
+    width: 95%;
+  }
+}
+
+main section .sectLeft form {
+  background-color: #f26524;
+  -webkit-box-shadow: 2px 2px 4px #1a1817;
+          box-shadow: 2px 2px 4px #1a1817;
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  padding: 2pc;
+}
+
+@media screen and (max-width: 480px) {
+  main section .sectLeft form {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 8%;
+  }
+}
+
+main section .sectLeft form input {
+  width: 79%;
+  padding: 2%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  border: none;
+}
+
+main section .sectLeft form input:focus {
+  outline: 1px solid black;
+}
+
+main section .sectLeft form select {
+  width: 79%;
+  padding: 2%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+
+main section .sectLeft form button {
+  display: block;
+}
+
+main section .sectRight {
+  height: 100vh;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  background-color: #e6e6fa;
+  -webkit-box-shadow: 2px 2px 4px #1a1817;
+          box-shadow: 2px 2px 4px #1a1817;
+  padding: 6%;
+  overflow: scroll;
+}
+
+main section .sectRight .infoDiv {
+  border-left: solid 1px #f26524;
+  width: 80%;
+  height: auto;
+  padding: 4%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+
+main section .sectRight .infoDiv span {
+  color: #f26524;
+}
+
+.success {
+  background-color: #89c789;
+  padding: 3%;
+  text-align: center;
+}
+
+.danger {
+  background-color: #8b0d0d;
+  padding: 3%;
+  text-align: center;
+}
+
+.remove {
+  padding: .5% 2%;
+  background-color: red;
+  -webkit-box-shadow: 2px 2px 4px #1a1817;
+          box-shadow: 2px 2px 4px #1a1817;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5%;
+}
+/*# sourceMappingURL=mian.css.map */
